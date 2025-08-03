@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Controller } from "react-hook-form";
+import { Control, Controller, UseFormSetValue } from "react-hook-form";
 import {
   TextField,
   InputAdornment,
@@ -10,11 +10,17 @@ import {
 import { MdOutlineScale } from "react-icons/md";
 import { useSerialPortStore } from "../serial-port-store";
 
+interface FormData {
+  weight?: string;
+  grossWeight?: string;  // add this field
+  // add other fields here as needed
+}
+
 interface BasculeWeightInputProps {
-  name: string;
+  name: keyof FormData;
   label: string;
-  control: any;
-  setValue: any;
+  control: Control<FormData>;
+  setValue: UseFormSetValue<FormData>;
   basculeType: 1 | 2 | 3;
 }
 

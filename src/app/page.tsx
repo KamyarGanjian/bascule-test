@@ -6,8 +6,12 @@ import { useForm } from "react-hook-form";
 import Grid from "@mui/material/Grid";
 import { Box } from "@mui/material";
 
+interface FormData {
+  grossWeight?: string;
+}
+
 export default function BasculeTest() {
-  const { control, setValue, watch } = useForm<any>({});
+  const { control, setValue } = useForm<FormData>({});
 
   return (
     <Grid container spacing={8} sx={{ mt: 20 }}>

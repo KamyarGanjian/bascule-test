@@ -35,7 +35,6 @@ interface BasculeConnectionButtonProps {
 export const BasculeConnectionButton = ({
   onConnect,
   disabled = false,
-  receivedSettings,
   basculeType,
 }: BasculeConnectionButtonProps) => {
   const [isLoading, setIsLoading] = useState(false);
