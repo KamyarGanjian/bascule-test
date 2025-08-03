@@ -3,7 +3,7 @@
 import { BasculeConnectionButton } from "@/components/bascule-connection-button";
 import { BasculeWeightInput } from "@/components/bascule-weight-input";
 import { useForm } from "react-hook-form";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import { Box } from "@mui/material";
 
 export default function BasculeTest() {
