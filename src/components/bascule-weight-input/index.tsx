@@ -12,8 +12,7 @@ import { useSerialPortStore } from "../serial-port-store";
 
 interface FormData {
   weight?: string;
-  grossWeight?: string;  // add this field
-  // add other fields here as needed
+  grossWeight?: string;
 }
 
 interface BasculeWeightInputProps {
